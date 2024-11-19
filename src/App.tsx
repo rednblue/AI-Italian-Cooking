@@ -11,7 +11,7 @@ const history = createBrowserHistory({ basename: '/AI-Italian-Cooking' });
 const App = () => {
   return (
     <Router>
-      <BrowserRouter basename={'/AI-Italian-Cooking'}>
+      <BrowserRouter basename={'/AI-Italian-Cooking'} />
       <div className="min-h-screen bg-white">
         <Header />
         
