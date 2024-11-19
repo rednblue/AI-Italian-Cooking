@@ -4,10 +4,14 @@ import Header from './components/Header';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
 import Contact from './components/Contact';
+import { createBrowserHistory } from 'history';
+
+const history = createBrowserHistory({ basename: '/AI-Italian-Cooking' });
 
 const App = () => {
   return (
     <Router>
+      <BrowserRouter basename={'/AI-Italian-Cooking'}>
       <div className="min-h-screen bg-white">
         <Header />
         
@@ -25,7 +29,7 @@ const App = () => {
           </div>
         </footer>
       </div>
-    </Router>
+    </Router history={history}>
   );
 };
 
