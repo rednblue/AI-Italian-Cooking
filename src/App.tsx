@@ -1,23 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import RecipeList from './components/RecipeList';
 import RecipeDetail from './components/RecipeDetail';
 import Contact from './components/Contact';
-import { createBrowserHistory } from 'history';
-
-const history = createBrowserHistory({ basename: '/AI-Italian-Cooking' });
 
 const App = () => {
   return (
     <Router>
-      <BrowserRouter basename={'/AI-Italian-Cooking'} />
+      
       <div className="min-h-screen bg-white">
         <Header />
         
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Routes>
-            <Route path="/" element={<RecipeList />} />
+            <Route path="/" element={<Navigate to="/recipes" replace />} />
+            <Route path="/recipes" element={<RecipeList />} />
             <Route path="/recipe/:id" element={<RecipeDetail />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
@@ -29,7 +27,7 @@ const App = () => {
           </div>
         </footer>
       </div>
-    </Router history={history}>
+    </Router>
   );
 };
 
