@@ -1,0 +1,57 @@
+{
+  "recipes": [
+    {
+      "id": "classic-lasagna",
+      "title": "Classic Homemade Italian Lasagna",
+      "description": "Traditional Italian lasagna with rich meat sauce and creamy cheese layers",
+      "image": "https://images.unsplash.com/photo-1574894709920-11b28e7367e3?auto=format&fit=crop&q=80",
+      "prepTime": "30 mins",
+      "cookTime": "60 mins",
+      "servings": 8,
+      "category": "pasta",
+      "difficulty": "intermediate",
+      "tags": ["pasta", "beef", "cheese", "baked"]
+    },
+    {
+      "id": "margherita-pizza",
+      "title": "Authentic Margherita Pizza",
+      "description": "Simple yet delicious Neapolitan pizza with fresh basil and mozzarella",
+      "image": "https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?auto=format&fit=crop&q=80",
+      "prepTime": "20 mins",
+      "cookTime": "15 mins",
+      "servings": 4,
+      "category": "pizza",
+      "difficulty": "easy",
+      "tags": ["pizza", "vegetarian", "quick"]
+    },
+    {
+      "id": "tiramisu",
+      "title": "Classic Tiramisu",
+      "description": "Elegant Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream",
+      "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80",
+      "prepTime": "30 mins",
+      "cookTime": "4 hours",
+      "servings": 8,
+      "category": "dessert",
+      "difficulty": "intermediate",
+      "tags": ["dessert", "coffee", "no-bake"]
+    }
+  ],
+  "categories": [
+    {
+      "id": "pasta",
+      "name": "Pasta Dishes",
+      "description": "Traditional Italian pasta recipes"
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "description": "Authentic Italian pizza recipes"
+    },
+    {
+      "id": "dessert",
+      "name": "Desserts",
+      "description": "Sweet Italian treats and desserts"
+    }
+  ]
+}
