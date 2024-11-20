@@ -11,7 +11,7 @@ const RecipeDetail = () => {
 
   useEffect(() => {
     if (recipe) {
-      fetch(`/src/data/recipes/${recipe.id}.md`)
+      fetch(`/AI-Italian-Cooking/data/recipes/${recipe.id}.md`)
         .then(res => res.text())
         .then(text => setMarkdown(text))
         .catch(console.error);
